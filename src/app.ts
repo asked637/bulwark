@@ -31,7 +31,11 @@ app.use(
     directives: {
       defaultSrc: ["'self' blob:", 'stackpath.bootstrapcdn.com'],
       scriptSrc: ["'self'", 'code.jquery.com', 'stackpath.bootstrapcdn.com'],
-      styleSrc: ["'self'", 'stackpath.bootstrapcdn.com', "'unsafe-inline'"]
+      styleSrc: ["'self'", 'stackpath.bootstrapcdn.com', "'unsafe-inline'"],
+      objectSrc: ["'none'"],
+      connectSrc: ["'self'"],
+      imgSrc: ["'self' blob:"],
+      fontSrc: ["'self'"]
     }
   })
 );
